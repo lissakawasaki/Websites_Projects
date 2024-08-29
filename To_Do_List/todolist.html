@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Contêiner de Lista de Tarefas -->
+        <div class="todo-container">
+            <h1>Lista de Tarefas</h1>
+            
+            <!-- Seletor de Modo com Descrição -->
+            <div class="theme-switch">
+                <input type="checkbox" id="theme-toggle">
+                <label for="theme-toggle">Modo Noturno</label>
+                <p class="description">Ative para uma visualização mais confortável em ambientes escuros.</p>
+            </div>
+
+            <!-- Input para Nova Tarefa com Categorias e Prioridades e Descrições -->
+            <div class="input-container">
+                <input type="text" id="new-task" placeholder="Adicione uma nova tarefa" title="Digite a descrição da tarefa">
+                <p class="description">Digite a tarefa que deseja adicionar à sua lista.</p>
+
+                <select id="category-select" title="Selecione a categoria da tarefa">
+                    <option value="">Escolha a Categoria</option>
+                    <option value="Trabalho">Trabalho</option>
+                    <option value="Pessoal">Pessoal</option>
+                    <option value="Estudos">Estudos</option>
+                </select>
+                <p class="description">Escolha a categoria que melhor descreve sua tarefa.</p>
+
+                <select id="priority-select" title="Defina a prioridade da tarefa">
+                    <option value="Alta">Alta</option>
+                    <option value="Média">Média</option>
+                    <option value="Baixa">Baixa</option>
+                </select>
+                <p class="description">Defina a prioridade: Alta, Média ou Baixa.</p>
+
+                <input type="date" id="due-date" title="Escolha a data de vencimento">
+                <p class="description">Selecione a data de vencimento da tarefa.</p>
+
+                <button id="add-task-btn" title="Clique para adicionar a tarefa">Adicionar</button>
+            </div>
+
+            <!-- Botões de Ações -->
+            <div class="actions-container">
+                <button id="save-tasks-btn" title="Salvar lista em um arquivo">Salvar Lista</button>
+                <button id="share-list-btn" title="Compartilhar a lista">Compartilhar Lista</button>
+            </div>
+        </div>
+
+        <!-- Novo Contêiner para Visualizar a Lista de Tarefas Atuais -->
+        <div class="task-view-container">
+            <h2>Tarefas Atuais</h2>
+            <ul id="task-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

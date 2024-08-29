@@ -1,0 +1,161 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fef9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s ease;
+}
+
+/* Modo Noturno */
+.dark-mode {
+    background-color: #2e2e2e;
+    color: #e0e0e0;
+}
+
+/* Contêiner Principal */
+.container {
+    width: 90%;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Formulário de Adição de Tarefa */
+.form-container {
+    flex: 1;
+}
+
+input[type="text"], select, input[type="date"] {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #f5c6c6;
+    border-radius: 10px;
+    background-color: #fdf4f4;
+    font-size: 16px;
+    color: #333;
+}
+
+button {
+    padding: 12px 25px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff77a9;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #ff65a2;
+    transform: scale(1.05);
+}
+
+/* Lista de Tarefas */
+.task-list-container {
+    flex: 2;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    margin: 8px 0;
+    background: #fff;
+    border: 1px solid #f5c6c6;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.task-item.completed {
+    background: #d4edda;
+}
+
+.task-item input[type="text"] {
+    flex: 1;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    color: inherit;
+}
+
+.task-category, .task-priority, .task-due-date {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #777;
+}
+
+.task-actions {
+    margin-left: 15px;
+}
+
+.edit-btn, .delete-btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.edit-btn {
+    background-color: #f8c6d0;
+    color: #000;
+}
+
+.delete-btn {
+    background-color: #ff6f61;
+    color: #fff;
+}
+
+.edit-btn:hover {
+    background-color: #f4b8b0;
+    transform: scale(1.05);
+}
+
+.delete-btn:hover {
+    background-color: #e55d4c;
+    transform: scale(1.05);
+}
+
+/* Contêiner de Alternância de Tema */
+.theme-toggle-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.theme-toggle-container label {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.theme-toggle-container input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
