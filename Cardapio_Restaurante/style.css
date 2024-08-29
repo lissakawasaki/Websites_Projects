@@ -1,0 +1,312 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffe4e1;
+    color: #5f5f5f;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #ffb6c1;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+main {
+    width: 100%;
+    max-width: 1200px; /* Aumentado para acomodar duas colunas */
+    margin: 20px auto;
+}
+
+.pratos {
+    text-align: center;
+}
+
+.pratos h2 {
+    font-size: 2rem;
+    color: #ff69b4;
+    margin-bottom: 20px;
+}
+
+.pratos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Define duas colunas ajustáveis */
+    gap: 20px; /* Espaço entre os itens */
+}
+
+.prato {
+    border: 1px solid #ffb6c1;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.prato:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.prato h3 {
+    font-size: 1.5rem;
+    color: #ff69b4;
+    margin: 10px 0; /* Espaço padrão acima e abaixo do nome do prato */
+}
+
+.preco {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin: 5px 0; /* Espaço padrão ao redor do preço */
+}
+
+.favoritar {
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin: 10px 0; /* Espaço padrão acima e abaixo do botão */
+}
+
+.favoritar:hover {
+    background-color: #e60073;
+}
+
+.descricao {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 10px; /* Espaço acima da descrição */
+}
+
+.favoritos {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.favoritos h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    color: #ff69b4;
+    margin-bottom: 20px;
+}
+
+#lista-favoritos {
+    list-style: none;
+    padding: 0;
+}
+
+#lista-favoritos li {
+    border: 1px solid #ffb6c1;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px auto;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#lista-favoritos img {
+    max-width: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+#lista-favoritos h3 {
+    font-size: 1.2rem;
+    color: #ff69b4;
+    margin: 0;
+    flex-grow: 1;
+}
+
+/* Estilos para a página de contato */
+.sobre, .contato {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.sobre h2, .contato h2 {
+    font-size: 2rem;
+    color: #ff69b4;
+    margin-bottom: 20px;
+}
+
+.sobre p, .contato form {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.contato form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contato label {
+    font-weight: 500;
+    margin: 10px 0 5px;
+}
+
+.contato input, .contato textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contato button {
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.contato button:hover {
+    background-color: #e60073;
+}
+
+/* Estilos para os ícones sociais */
+.social-icons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    color: #ff69b4;
+    font-size: 2rem;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #e60073;
+}
+
+.favoritos-container {
+    border: 1px solid #ffb6c1;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+}
+
+#lista-favoritos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#lista-favoritos li {
+    border: 1px solid #ffb6c1;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo do item */
+    flex-wrap: wrap;
+}
+
+#lista-favoritos h3 {
+    font-size: 1.2rem;
+    color: #ff69b4;
+    margin: 0;
+    flex-grow: 1;
+    text-align: center; /* Centraliza o texto do título dentro do item */
+}
+
+#lista-favoritos button {
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+#lista-favoritos button:hover {
+    background-color: #e60073;
+}
+/* Adiciona estilos para os ícones sociais */
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    color: #ff69b4; /* Cor dos ícones */
+    font-size: 2rem;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #e60073; /* Cor dos ícones ao passar o mouse */
+}
+

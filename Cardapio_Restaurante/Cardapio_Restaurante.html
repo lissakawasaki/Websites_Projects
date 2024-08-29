@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sal & Pimenta</h1>
+        <nav>
+            <ul>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="pratos">
+            <h2>Pratos Principais</h2>
+            <div class="pratos-container">
+                <div class="prato" data-id="1">
+                    <h3>Bife à Parmegiana <span class="preco">R$ 39,90</span></h3>
+                    <button class="favoritar">❤️ Favoritar</button>
+                    <p class="descricao">Um clássico irresistível!</p>
+                </div>
+                <div class="prato" data-id="2">
+                    <h3>Feijão Tropeiro <span class="preco">R$ 29,90</span></h3>
+                    <button class="favoritar">❤️ Favoritar</button>
+                    <p class="descricao">O sabor que lembra a nossa casa!</p>
+                </div>
+                <div class="prato" data-id="3">
+                    <h3>Lasagna à Bolonhesa <span class="preco">R$ 34,90</span></h3>
+                    <button class="favoritar">❤️ Favoritar</button>
+                    <p class="descricao">Camadas de carinho e sabor.</p>
+                </div>
+                <div class="prato" data-id="4">
+                    <h3>Escondidinho de Carne Seca <span class="preco">R$ 32,90</span></h3>
+                    <button class="favoritar">❤️ Favoritar</button>
+                    <p class="descricao">Uma combinação perfeita!</p>
+                </div>
+                <div class="prato" data-id="5">
+                    <h3>Arroz Tropeiro <span class="preco">R$ 28,90</span></h3>
+                    <button class="favoritar">❤️ Favoritar</button>
+                    <p class="descricao">O arroz que abraça o paladar.</p>
+                </div>
+                <div class="prato" data-id="6">
+                    <h3>Polenta com Carne Moída <span class="preco">R$ 31,90</span></h3>
+                    <button class="favoritar">❤️ Favoritar</button>
+                    <p class="descricao">Uma combinação de sabores que aquecem o coração.</p>
+                </div>
+                <div class="prato" data-id="7">
+                    <h3>Sopa de Tomate com Queijo Quente <span class="preco">R$ 25,90</span></h3>
+                    <button class="favoritar">❤️ Favoritar</button>
+                    <p class="descricao">A sopa que lembra o colo da mãe.</p>
+                </div>
+                <div class="prato" data-id="8">
+                    <h3>Frango à Milanesa <span class="preco">R$ 36,90</span></h3>
+                    <button class="favoritar">❤️ Favoritar</button>
+                    <p class="descricao">Uma explosão de sabor em cada mordida.</p>
+                </div>
+                <div class="prato" data-id="9">
+                    <h3>Macarrão com Queijo <span class="preco">R$ 27,90</span></h3>
+                    <button class="favoritar">❤️ Favoritar</button>
+                    <p class="descricao">Aquele comfort food que nunca sai de moda.</p>
+                </div>
+                <div class="prato" data-id="10">
+                    <h3>Strogonoff de Carne <span class="preco">R$ 35,90</span></h3>
+                    <button class="favoritar">❤️ Favoritar</button>
+                    <p class="descricao">Um prato que sempre traz boas memórias.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="favoritos">
+            <h2>Meus Favoritos</h2>
+            <div class="favoritos-container">
+                <ul id="lista-favoritos"></ul>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
+//
